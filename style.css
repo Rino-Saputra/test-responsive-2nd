@@ -1,0 +1,740 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+/* headeh */
+.container {
+    display: grid;
+    justify-content: space-between;
+    overflow-x: hidden;
+    width: 100%;
+    /* background: linear-gradient(to right,rgba(177, 177, 171, 0.2),rgb(252, 252, 252)); */
+}
+
+/* navbar */
+.container .navbar {
+    padding: 25px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    width: 89%;
+    animation: navbaranimate 1s ease;
+}
+
+.container .navbar .mode-brand {
+    display: flex;
+    padding:18px 0;
+    width: 20%;
+    justify-content: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.container .navbar .mode-brand .mode {
+    height: 40px;
+    padding: 0 5px;
+}
+
+.container .navbar .mode-brand .mode span {
+    width: 30px;
+    height: 5px;
+    padding: 2px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+    border-radius: 50%;
+}
+
+.container .navbar .mode-brand .mode {
+    cursor: pointer;
+}
+
+.container .navbar .mode-brand .mode .mode-2 {
+    margin-left: -10px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container .navbar .mode-brand .brand {
+    white-space: nowrap
+}
+
+
+.container .navbar ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-left: -8%;
+}
+
+.container .navbar ul li {
+    list-style: none;
+}
+
+.container .navbar ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+
+.container .navbar .burger {
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+}
+
+.container .navbar .burger .line {
+    width: 69%;
+    height: 60%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.container .navbar .burger .line .f {
+    width: 40%;
+    height: 2px;
+    background-color: black;
+}
+
+.container .navbar .burger .line .s {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+
+.container .navbar .burger .line .t {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+}
+
+
+
+/* header */
+.container .header {
+    width: 80%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'up up'
+                          'lef righ';
+                          
+    animation: navbaranimate 1.5s ease;
+}
+
+.container .header div {
+    width: 100%;
+}
+
+.container .header .brand { grid-area: up; width: 100%;}
+.container .header .btn { grid-area: lef;}
+.container .header .list {grid-area: righ; justify-self: end;}
+
+.container .header .brand h1 {
+    font-weight: 10;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.733);
+    width: 90%;
+    display: inline-block;
+}
+
+.container .header .brand .icon {
+    width: 80px;
+    height: 80px;
+    background-image: url(twitch.png);
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    margin: 5px 0 0 18px;
+}
+
+
+.container .header .btn button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 11px;
+    border-style: none;
+    background-color: rgba(17, 15, 15, 0.13);
+}
+
+.container .header .list ul li {
+    display: inline;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.container .header .list ul li a {
+    text-decoration: none;
+    font-size: 0.7em;
+    padding: 10px;
+    color: rgba(17, 15, 15, 0.651);
+    font-weight: bold;
+}
+
+/* intro */
+.container .intro {
+    display: grid;
+    width: 100%;
+    background-color: rgba(5, 17, 17, 0.795);
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'image title'
+                          'image cont'
+                          'image bt';
+    animation: navbaranimate 1.9s ease;
+}
+
+.container .intro .item1 {
+    grid-area:  image;
+}
+
+.container .intro .item1 .contain-img {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 80px 0 0 80px;
+}
+
+.container .intro .item1 .contain-img .contain-profil {
+    display: flex;
+    width: 18%;
+    justify-content: space-evenly;
+    padding-bottom: 19px;
+    cursor: pointer;
+}
+
+.container .intro .item1 .contain-img .contain-profil .profil-img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-image: url(2.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.container .intro .item1 .contain-img .contain-profil .name {
+    line-height: 0px;
+}
+
+.container .intro .item1 .contain-img .main-img {
+    width: 28%;
+    min-height: 400px;
+    background-image: url(2.png);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.425);
+}
+
+.container .intro .item2 {
+    grid-area: title;
+    font-size: 40px;
+    margin-bottom: -40px;
+}
+
+.container .intro .item2 h1 {
+    font-weight: 10;
+}
+
+.container .intro .item3 {
+    grid-area: cont;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.container .intro .item3 h4 {
+    font-weight: 10;
+    width: 80%;
+}
+
+.container .intro .item4 {
+    grid-area: bt;
+    padding-bottom: 40px;
+}
+
+.container .intro .item4 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+/* content */
+
+.container .content {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    animation: navbaranimate 1.9s ease;
+}
+
+.container .content .service {
+    width: 80%;
+    color: rgba(0, 0, 0, 0.733);
+    padding-left: 50px;
+}
+
+.container .content .service h1{
+    font-weight: 10;
+    font-size: 72px;
+    margin-top: -15px;
+}
+
+.container .content .cont-testi-text {
+    display: flex;
+    width: 100%;
+    font-weight: 100;
+    background-color: rgba(5, 17, 17, 0.795);
+    color: white;
+}
+
+.container .content .cont-testi-text .cont-contact {
+    width: 50%;
+}
+
+.container .content .cont-testi-text .cont-contact .contact {
+    width: 26%;
+    background-color: white;
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    margin: 200px 0 0 80px;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.733);
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.425);
+}
+
+.container .content .cont-testi-text .cont-contact .contact button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    margin: 2px 0 0 -100px;
+    border-style: none;
+    background-color: rgba(5, 17, 17, 0.795);
+    color: white;
+}
+
+.container .content .cont-testi-text .cont-contact .contact input {
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgba(121, 115, 115, 0.13);
+    text-indent: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.container .content .cont-testi-text .cont-contact .contact h1 {
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.container .content .cont-testi-text .cont-contact .contact h4 {
+    font-weight: 100;
+    width: 90%;
+}
+.container .content .cont-testi-text .producing {
+    width: 60%;
+    font-size: 20px;
+}
+
+.container .content .cont-testi-text .producing h1 {
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.container .content .cont-testi-text .producing .sugest  h4 {
+    margin-bottom: -24px;
+    cursor: pointer;
+}
+
+.container .content .cont-testi-text .producing .sugest h6 {
+    margin-left: 80px;
+}
+
+.container .content .cont-testi-text .producing .sugest .icon {
+    width: 80px;
+    height: 80px;
+    background-image: url(2.png);
+    background-size: cover;
+    background-color: rgb(169, 99, 235);
+    border-radius: 8px;
+    margin-right: 10px;
+    float: left;
+}
+
+.container .about {
+    margin: 200px 0 0 80px;
+    color: rgba(0, 0, 0, 0.733);
+    animation: bottom-animate 1.5s ease;
+}
+
+.about .testi {
+    font-weight: 10;
+    font-size: 2em;
+}
+
+.about .testi-body {
+    width: 50%;
+    margin: auto;
+}
+
+.about h2 {
+    font-weight: 10;
+    margin: auto;
+}
+
+.about .line {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.185);
+    margin: 50px auto;
+}
+
+.about .client {
+    height: 80px;
+    width: 80px;
+    background-image: url(2.png);
+    background-size: cover;
+    background-color: rgba(78, 78, 78, 0.171);
+    border-radius: 50%;
+    margin: -14px 20px 50px 0;
+    float: left;
+}
+
+.about .tt {
+    display: block;
+    line-height: 10px;
+}
+
+/* event */
+
+@keyframes navbaranimate {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+
+@keyframes bottom-animate {
+    from {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*  */
+
+.container .navbar ul li a:hover {
+    color: rgba(3, 8, 8, 0.877);
+}
+
+.container .header .btn button:hover {
+    background-color: rgba(5, 17, 17, 0.795);
+    color: white;
+}
+
+.container .header .list ul li a:hover {
+    color: rgba(3, 8, 8, 0.877);
+}
+
+.container .content .cont-testi-text .cont-contact .contact button:hover {
+    background-color: rgba(75, 9, 9, 0.315);
+    color: black;
+}
+
+
+/* responsive */
+
+ @media (max-width: 560px){
+
+    .container .navbar ul {
+        display: none;
+    }
+
+    .container .navbar {
+        width: 110%;
+    }
+
+    .container .navbar .mode-brand {
+        margin-left: -10%;
+    } 
+
+    .container .header {
+        width: 90%;
+        padding: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'up up'
+                              'lef lef'
+                              'righ righ';
+        
+        row-gap: 20px;
+    }
+    
+    /* header */
+    .container .header .brand h1 {
+        font-size: 2.6em;
+    }
+    
+    .container .header .brand .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container .header .list ul  {
+        margin-left: -10%;
+    }
+
+    /* intro */
+    .container .intro {
+        width: 100%;
+        padding: 0 14px;
+        grid-template-areas: 'title title'
+                              'cont cont'
+                              'bt bt'
+                              'image image';
+        margin-bottom: 250px;
+    }
+
+    .container .intro .item2 h1 {
+        font-size: 1.4em;
+    }
+
+    .container .intro .item4 {
+        padding-bottom: 240px;
+    }
+
+    .container .intro .item4 button {
+        width: 90%;
+        height: 58px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .container .intro .item1 .contain-img {
+        margin: -190px 0 0 -5%;
+        padding: 0 40px;
+    }
+    
+    .container .intro .item1 .contain-img .contain-profil {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .container .intro .item1 .contain-img .contain-profil .profil-img {
+        width: 65px;
+        height: 61px;
+        margin-right: 20px;
+    }
+    
+    .container .intro .item1 .contain-img .main-img {
+        width: 80%;
+        background-position-y: 1px;
+        background-position-x: 42%;
+        background-repeat: no-repeat;
+    }
+
+    /* content */
+    .container .content {
+        margin-bottom: 200px;
+    }
+
+    .container .content .cont-testi-text .cont-contact {
+        width: 0%;
+        margin-top: 400px;
+    }
+
+    .container .content .cont-testi-text .cont-contact .contact {
+        width: 56%;
+    }
+
+    .container .content .service h1{
+            font-size: 50px;
+    }
+    .container .content .cont-testi-text .producing {
+        width: 89%;
+        padding: 0 0 200px 4%;
+    }
+
+    .container .content .cont-testi-text .producing .sugest  h4 {
+        font-size: 0.8em;
+    }
+    
+    .container .content .cont-testi-text .producing .sugest h6 {
+        font-size: 0.5em;
+    }
+    
+    /* about */
+    .container .about {
+        margin: 200px 0 0 0px;
+    }
+
+    .about .testi h1 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .about .testi-body {
+        width: 85%;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 780px){
+    
+    /* navbar */
+
+    .container .navbar {
+        justify-content: space-between;
+    }
+    .container .navbar ul {
+        display: none;
+    }
+
+    .container .navbar .mode-brand {
+        padding-left: 5%;
+    } 
+
+    /* header */
+    .container .header {
+        width: 90%;
+        padding: 50px;
+        row-gap: 20px;
+    }
+    .container .header .brand h1 {
+        font-size: 4em;
+    }
+
+    .container .header .list ul  {
+        margin-left: -20%;
+        font-size: .9em;
+    }
+
+    /* intro */
+    .container .intro {
+        width: 100%;
+        padding: 0 14px;
+        grid-template-areas: 'title title'
+                              'cont cont'
+                              'bt bt'
+                              'image image';
+        margin-bottom: 250px;
+    } 
+
+    .container .intro .item4 {
+        padding-bottom: 240px;
+    }
+
+    .container .intro .item4 button {
+        width: 90%;
+        height: 58px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .container .intro .item1 .contain-img {
+        margin: -190px 0 0 20px;
+        padding: 0 40px;
+    }
+    
+    .container .intro .item1 .contain-img .contain-profil {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .container .intro .item1 .contain-img .contain-profil .profil-img {
+        width: 65px;
+        height: 61px;
+        margin-right: 20px;
+    }
+    
+    .container .intro .item1 .contain-img .main-img {
+        width: 60%;
+        background-position-y: 1px;
+        background-position-x: -40px;
+        background-repeat: no-repeat;
+    }
+
+    /* content */
+    .container .content {
+        margin-bottom: 120px;
+    }
+
+    .container .content .cont-testi-text .cont-contact {
+        width: 0%;
+        margin-top: 400px;
+    }
+
+    .container .content .cont-testi-text .cont-contact .contact {
+        width: 56%;
+    }
+
+    .container .content .service h1{
+            font-size: 50px;
+    }
+    .container .content .cont-testi-text .producing {
+        width: 89%;
+        padding: 0 0 200px 4%;
+    }
+
+    .container .content .cont-testi-text .producing .sugest  h4 {
+        font-size: 1em;
+    }
+    
+    .container .content .cont-testi-text .producing .sugest h6 {
+        font-size: 0.6em;
+    }
+/* about */
+    .container .about {
+        margin: 200px 0 0 0px;
+    }
+
+    .about .testi h1 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .about .testi-body {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container .navbar ul{
+        width: 80%;
+    }
+
+    .container .intro {
+        margin-bottom: 100px;
+    } 
+}
